@@ -52,7 +52,7 @@ module "blog" {
   source  = "terraform-aws-modules/security-group/aws"
   version = "5.1.2"
 
-  name = "blog_new"
+  name = "blog"
   vpc_id = module.blog_vpc.vpc_id
 
   ingress_rules       = ["http-80-tcp", "https-443-tcp"]
