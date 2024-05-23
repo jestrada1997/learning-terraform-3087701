@@ -82,13 +82,13 @@ module "alb" {
       protocol           = "HTTP"
       target_group_index = 0
     }
-  ]
-
+    ]
+  }
   tags = {
     Environment = "Dev"
       }
     }
-  }
+  
 
 module "blog" {
   source  = "terraform-aws-modules/security-group/aws"
