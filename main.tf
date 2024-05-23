@@ -74,7 +74,7 @@ module "alb" {
     }
     }
   ]
-  
+}
 
 module "blog" {
   source  = "terraform-aws-modules/security-group/aws"
